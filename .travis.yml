@@ -1,8 +1,8 @@
 #access_key_id: $AWS_ACCESS_KEY
 #secret_access_key: $AWS_SECRET_KEY
 language: generic
-notifications:
-  email: jalilemail@gmail.com
+#notifications:
+#  email: jalilemail@gmail.com
 
 sudo: required
 services:
@@ -27,8 +27,5 @@ deploy:
   bucket_path: "dockerreactapp"
   on:
     branch: master
-
-  access_key_id:
-    secure: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: $AWS_SECRET_KEY
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
