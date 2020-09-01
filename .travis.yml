@@ -1,4 +1,6 @@
 language: generic
+notifications:
+  email: jalilemail@gmail.com
 
 sudo: required
 services:
