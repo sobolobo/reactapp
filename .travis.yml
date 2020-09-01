@@ -1,0 +1,13 @@
+language: generic
+
+sudo: required
+services:
+  - docker
+
+#before tests are run
+##build docker image  before test run
+before_install:
+  - docker build  -t reactapp-test -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true reactapp-test npm run test
