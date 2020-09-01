@@ -20,11 +20,11 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "ap-northeast-1"
-  app: "dockerreactapp"
+  app: "docker-reactapp"
   env: "DockerReactapp-env"
   bucket_name: "elasticbeanstalk-ap-northeast-1-386357636638"
   #  bucket path is the name of app name:  Namaes usuall get created after you od a your first deploy
-  bucket_path: "dockerreactapp"
+  bucket_path: "docker-reactapp"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
